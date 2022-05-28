@@ -7,6 +7,7 @@ export ZSH=/home/anten/.oh-my-zsh
 export PROJECT_HOME=/home/anten/projects
 export CURRENT_PROJECT=mosaicnotes
 export PATH=$PATH:~/.local/bin
+export PATH="$PATH:$HOME/.dotnet/tools/"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 # ZSH_THEME="amuse"
