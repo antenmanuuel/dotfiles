@@ -5,7 +5,6 @@
 
 export ZSH=/home/anten/.oh-my-zsh
 export PROJECT_HOME=/home/anten/projects
-export CURRENT_PROJECT=mosaicnotes
 export PATH=$PATH:~/.local/bin
 export PATH="$PATH:$HOME/.dotnet/tools/"
 alias pbcopy='xclip -selection clipboard'
@@ -23,7 +22,6 @@ alias sz='source ~/.zshrc'
 # projects
 alias project="cd ~/projects/$CURRENT_PROJECT"
 alias rr=project
-alias limbus="cd ~/projects/limbus && source env/bin/activate"
 
 # tmux stuff
 # alias tmux="TERM=screen-256color-bce tmux"
