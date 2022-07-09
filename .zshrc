@@ -16,6 +16,7 @@ export PATH=$PATH:~/.local/bin
 export PATH="$PATH:$HOME/.dotnet/tools/"
 export SHELL=/bin/zsh
 export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:/Users/jetbrains/.local/bin"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 # ZSH_THEME="amuse"
@@ -23,12 +24,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=( git zsh-syntax-highlighting zsh-autosuggestions zsh-completions poetry )
 source $ZSH/oh-my-zsh.sh
 
-alias pip="pip3"
-alias python="python3"
+alias pip="pip3.9"
+alias python "python3.9"
 
 alias ls='ls -lah'
 alias sz='source ~/.zshrc'
-
+alias pipenv='pipenv --python 3.9'
 # projects
 alias project="cd ~/projects/$CURRENT_PROJECT"
 alias rr=project
@@ -59,5 +60,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 
