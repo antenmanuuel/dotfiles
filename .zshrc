@@ -31,6 +31,9 @@ alias python="python3.9"
 alias ls='ls -lah'
 alias sz='source ~/.zshrc'
 alias pipenv='pipenv --python 3.9'
+alias uselts="nvm use --lts"
+alias inlts="nvm install --lts"
+
 # projects
 alias project="cd ~/projects/$CURRENT_PROJECT"
 alias rr=project
@@ -61,6 +64,7 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 
 
