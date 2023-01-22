@@ -26,13 +26,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=( git zsh-syntax-highlighting zsh-autosuggestions zsh-completions poetry )
 source $ZSH/oh-my-zsh.sh
 
-alias pip="pip3.9"
-alias python="python3.9"
+alias pip="pip3"
+alias python="python3"
 alias ls='ls -lah'
 alias sz='source ~/.zshrc'
-alias pipenv='pipenv --python 3.9'
-alias uselts="nvm use --lts"
-alias inlts="nvm install --lts"
 
 # projects
 alias project="cd ~/projects/$CURRENT_PROJECT"
@@ -62,6 +59,27 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+
+
+export PATH=/home/student/oclint-22.02/bin:$PATH
+
+
+apt() { 
+  command nala "$@"
+}
+sudo() {
+  if [ "$1" = "apt" ]; then
+    shift
+    command sudo nala "$@"
+  else
+    command sudo "$@"
+  fi
+}
+
+# opam configuration
+[[ ! -r /home/anten/.opam/opam-init/init.zsh ]] || source /home/anten/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 
 
