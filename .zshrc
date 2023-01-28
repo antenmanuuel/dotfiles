@@ -62,10 +62,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
-
-export PATH=/home/student/oclint-22.02/bin:$PATH
-
-
 apt() { 
   command nala "$@"
 }
@@ -78,8 +74,7 @@ sudo() {
   fi
 }
 
-# opam configuration
-[[ ! -r /home/anten/.opam/opam-init/init.zsh ]] || source /home/anten/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 
 
 
